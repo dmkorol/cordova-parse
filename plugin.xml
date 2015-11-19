@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="com.ccsoft.plugin.CordovaParse"
+	id="com.ccsoft.plugin.CordovaParse_mod"
 	version="0.1.0">
 
 	<name>CordovaParse</name>
@@ -28,7 +28,7 @@
 		
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="CordovaParse">
-				<param name="android-package" value="com.ccsoft.plugin.CordovaParse" />
+				<param name="android-package" value="com.ccsoft.plugin.CordovaParse_mod" />
 			</feature>		
 		</config-file>
 

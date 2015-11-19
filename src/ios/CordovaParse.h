@@ -5,7 +5,9 @@
 
 }
 
-- (void) getInstallationId:(CDVInvokedUrlCommand*)command;
-- (void) setKeyValue:(CDVInvokedUrlCommand*)command;
+- (void)getInstallationId: (CDVInvokedUrlCommand*)command;
+- (void)getSubscriptions: (CDVInvokedUrlCommand *)command;
+- (void)subscribe: (CDVInvokedUrlCommand *)command;
+- (void)unsubscribe: (CDVInvokedUrlCommand *)command;
 
 @end
