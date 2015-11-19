@@ -13,25 +13,18 @@ For Android tested with Parse SDK 1.5.1
 
 ##Installing the plugin
 To add this plugin just type:
-```cordova plugin add https://github.com/ccsoft/cordova-parse.git```
+```cordova plugin add https://github.com/kodiua/cordova-parse.git```
 
 To remove this plugin type:
-```cordova plugin remove com.ccsoft.plugin.CordovaParse```
+```cordova plugin remove com.ccsoft.plugin.CordovaParse_mod```
 
 The plugin has the following methods:
 
 ##Usage
-* [getInstallationId](#getInstallationId)
-* [setKeyValue](#setKeyValue)
+- (void)getInstallationId: (CDVInvokedUrlCommand*)command;
+- (void)getSubscriptions: (CDVInvokedUrlCommand *)command;
+- (void)subscribe: (CDVInvokedUrlCommand *)command;
+- (void)unsubscribe: (CDVInvokedUrlCommand *)command;
 
 *** 
-
-###getInstallationId
-Retrieves the Parse installation Id with success callback
-
-
-*** 
-
-###setKeyValue
-Puts and sends key value pair to Parse installation
 
