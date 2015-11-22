@@ -1,4 +1,3 @@
-/// <reference path="cordova-parse.d.ts"/>
 var CC;
 (function (CC) {
     var CordovaParse = (function () {
