@@ -82,12 +82,15 @@
 
 
 - (void)resetBadge:(CDVInvokedUrlCommand*)command
+{
     CDVPluginResult* pluginResult = nil;
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     if (currentInstallation.badge != 0) {
-    currentInstallation.badge = 0;
-    [currentInstallation saveEventually];
+        currentInstallation.badge = 0;
+        [currentInstallation saveEventually];
     }
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 @end
