@@ -1,41 +1,53 @@
-var CordovaParse = {
-    getInstallationId: function(successCallback, errorCallback) {
-        cordova.exec(
-            successCallback,
-            errorCallback,
-            'CordovaParse',
-            'getInstallationId',
-            []
-        );
-    },
+/// <reference path="cordova-parse.d.ts"/>
+var CC;
+(function (CC) {
+    var CordovaParse = (function () {
+        function CordovaParse() {
+        }
 
-    getSubscriptions: function(successCallback, errorCallback) {
-        cordova.exec(
-            successCallback,
-            errorCallback,
-            'CordovaParse',
-            'getSubscriptions',
-            []
-        );
-    },
+        CordovaParse.prototype.getInstallationId = function(successCallback, errorCallback) {
+            cordova.exec(
+                successCallback,
+                errorCallback,
+                'CordovaParse',
+                'getInstallationId',
+                []
+            );
+        }
 
-    subscribe: function(channel, successCallback, errorCallback) {
-        cordova.exec(
-            successCallback,
-            errorCallback,
-            'CordovaParse',
-            'subscribe',
-            [ channel ]
-        );
-    },
+        CordovaParse.prototype.getSubscriptions = function(successCallback, errorCallback) {
+            cordova.exec(
+                successCallback,
+                errorCallback,
+                'CordovaParse',
+                'getSubscriptions',
+                []
+            );
+        }
 
-    unsubscribe: function(channel, successCallback, errorCallback) {
-        cordova.exec(
-            successCallback,
-            errorCallback,
-            'CordovaParse',
-            'unsubscribe',
-            [ channel ]
-        );
-    }
-};
+        CordovaParse.prototype.subscribe = function(channel, successCallback, errorCallback) {
+            cordova.exec(
+                successCallback,
+                errorCallback,
+                'CordovaParse',
+                'subscribe',
+                [ channel ]
+            );
+        }
+
+        CordovaParse.prototype.unsubscribe = function(channel, successCallback, errorCallback) {
+            cordova.exec(
+                successCallback,
+                errorCallback,
+                'CordovaParse',
+                'unsubscribe',
+                [ channel ]
+            );
+        }
+
+        return CordovaParse;
+    })();
+    CC.CordovaParse = CordovaParse;
+})(CC || (CC = {}));
+
+module.exports = CC;
