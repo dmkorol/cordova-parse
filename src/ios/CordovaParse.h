@@ -9,5 +9,6 @@
 - (void)getSubscriptions: (CDVInvokedUrlCommand *)command;
 - (void)subscribe: (CDVInvokedUrlCommand *)command;
 - (void)unsubscribe: (CDVInvokedUrlCommand *)command;
+- (void)resetBadge: (CDVInvokedUrlCommand *)command;
 
 @end

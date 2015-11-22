@@ -40,4 +40,13 @@ CordovaParse.unsubscribe = function(channel, successCallback, errorCallback) {
     );
 };
 
+CordovaParse.resetBadge = function(successCallback, errorCallback) {
+    cordova.exec(
+        successCallback,
+        errorCallback,
+        'CordovaParse',
+        'resetBadge'
+    );
+};
+
 module.exports = CordovaParse;
