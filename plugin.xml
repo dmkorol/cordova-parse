@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="com.ccsoft.plugin.CordovaParse_mod"
+	id="com.ccsoft.plugin.CordovaParse"
 	version="0.1.0">
 
 	<name>CordovaParse</name>
@@ -9,7 +9,7 @@
 		A cordova plugin for Parse SDK (iOS &amp; Android)
 	</description>
 	<author>CCSoft</author>
-	<keywords>parse, push, cordova, ccsoft</keywords>
+	<keywords>parse, push, cordova</keywords>
 	<license>Apache 2.0 License</license>
 
     <engines>
@@ -17,7 +17,7 @@
     </engines>
   
 	<js-module src="www/cordova-parse.js">
-		<merges target="CC" />
+		<clobbers target="cordova.CordovaParse" />
 	</js-module>
 	
 	<!-- android -->
@@ -28,7 +28,7 @@
 		
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="CordovaParse">
-				<param name="android-package" value="com.ccsoft.plugin.CordovaParse-fork" />
+				<param name="android-package" value="com.ccsoft.plugin.CordovaParse" />
 			</feature>		
 		</config-file>
 

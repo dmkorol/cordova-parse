@@ -49,4 +49,4 @@ var CC;
     CC.CordovaParse = CordovaParse;
 })(CC || (CC = {}));
 
-module.exports = CC;
+module.exports = CC.CordovaParse;
